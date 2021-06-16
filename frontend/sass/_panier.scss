@@ -1,0 +1,116 @@
+@import "./mixin";
+@import "./variables";
+
+* {
+  box-sizing: border-box;
+}
+
+#recap {
+  @include boxcenter;
+  flex-direction: column;
+
+  padding: 0% 10%;
+  .container_produit {
+    @include boxcenter;
+    flex-direction: row;
+    width: 100%;
+    border-bottom: 1px solid black;
+  }
+  img {
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+  }
+  div {
+    @include boxcenter;
+    flex-direction: column;
+    padding: 0px 10px;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    width: 60%;
+  }
+  #prix {
+    width: 50px;
+    font-weight: bold;
+  }
+  #totalPrix {
+    font-weight: bolder;
+    font-size: x-large;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 450px;
+    box-shadow: 0px 0px 5px silver;
+    border-radius: 25px;
+    padding: 20px;
+    position: relative;
+    input {
+      border-radius: 15px;
+      padding: 5px;
+      outline: none;
+    }
+    p {
+      width: fit-content;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    #label_nom {
+      width: 50%;
+      input {
+        width: 80%;
+      }
+    }
+    #label_prenom {
+      width: 50%;
+      input {
+        width: 80%;
+      }
+    }
+    #label_adresse {
+      width: 100%;
+      input {
+        width: 80%;
+      }
+    }
+    #label_codePostal {
+      width: 55%;
+      input {
+        width: 70%;
+      }
+    }
+    #label_ville {
+      width: 45%;
+      input {
+        width: 80%;
+      }
+    }
+    #label_email {
+      width: 100%;
+      margin-bottom: 15px;
+      input {
+        width: 45%;
+      }
+    }
+    #submit {
+      position: absolute;
+      border-radius: 50px;
+      bottom: 20px;
+      right: 50px;
+      width: 30%;
+      height: 20%;
+      cursor: pointer;
+      background-color: $color_header;
+      box-shadow: 0px 0px 5px silver;
+      transition: 500ms ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

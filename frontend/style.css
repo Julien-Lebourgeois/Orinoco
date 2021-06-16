@@ -1,0 +1,479 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: whitesmoke;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #f4eaf2;
+  height: 200px;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 10px silver;
+          box-shadow: 0px 0px 10px silver;
+}
+
+header #logo_header {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+header nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 10%;
+}
+
+header nav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+header nav a i {
+  color: #ce8e46;
+  font-size: 300%;
+  -webkit-transition: 700ms ease-in-out;
+  transition: 700ms ease-in-out;
+}
+
+header nav a i:hover {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+footer {
+  background-color: #f4eaf2;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+@media all and (max-width: 700px) {
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100vh;
+  width: auto;
+}
+
+#container img {
+  width: 300px;
+  height: 200px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+#container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  padding: 5px;
+  margin: 20px;
+  -webkit-box-shadow: 0px 0px 10px silver;
+          box-shadow: 0px 0px 10px silver;
+  border-radius: 25px;
+  position: relative;
+}
+
+#container div span {
+  margin-top: 5px;
+}
+
+#container div a {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  text-decoration: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  background-color: #f4eaf2;
+  -webkit-box-shadow: 0px 0px 5px silver;
+          box-shadow: 0px 0px 5px silver;
+  color: black;
+  padding: 10px;
+  border-radius: 25px;
+  -webkit-transition: 500ms ease-in-out;
+  transition: 500ms ease-in-out;
+}
+
+#container div a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+#container_produit {
+  padding: 5% 20%;
+}
+
+#carte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0px 0px 10px silver;
+          box-shadow: 0px 0px 10px silver;
+  border-radius: 35px;
+  padding: 10px;
+  height: auto;
+  width: auto;
+}
+
+#carte img {
+  width: 90%;
+  height: auto;
+  border-radius: 35px;
+}
+
+#carte p {
+  text-align: center;
+}
+
+#carte #prix {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#carte label {
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+
+#carte button {
+  margin-top: 15px;
+  cursor: pointer;
+  background-color: #f4eaf2;
+  -webkit-box-shadow: 0px 0px 5px silver;
+          box-shadow: 0px 0px 5px silver;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 25px;
+  -webkit-transition: 500ms ease-in-out;
+  transition: 500ms ease-in-out;
+  outline: none;
+}
+
+#carte button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#recap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0% 10%;
+}
+
+#recap .container_produit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+#recap img {
+  height: 150px;
+  width: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#recap div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0px 10px;
+  text-align: center;
+}
+
+#recap p {
+  text-align: center;
+  width: 60%;
+}
+
+#recap #prix {
+  width: 50px;
+  font-weight: bold;
+}
+
+#recap #totalPrix {
+  font-weight: bolder;
+  font-size: x-large;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#recap form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 70%;
+  height: 450px;
+  -webkit-box-shadow: 0px 0px 5px silver;
+          box-shadow: 0px 0px 5px silver;
+  border-radius: 25px;
+  padding: 20px;
+  position: relative;
+}
+
+#recap form input {
+  border-radius: 15px;
+  padding: 5px;
+  outline: none;
+}
+
+#recap form p {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#recap form #label_nom {
+  width: 50%;
+}
+
+#recap form #label_nom input {
+  width: 80%;
+}
+
+#recap form #label_prenom {
+  width: 50%;
+}
+
+#recap form #label_prenom input {
+  width: 80%;
+}
+
+#recap form #label_adresse {
+  width: 100%;
+}
+
+#recap form #label_adresse input {
+  width: 80%;
+}
+
+#recap form #label_codePostal {
+  width: 55%;
+}
+
+#recap form #label_codePostal input {
+  width: 70%;
+}
+
+#recap form #label_ville {
+  width: 45%;
+}
+
+#recap form #label_ville input {
+  width: 80%;
+}
+
+#recap form #label_email {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#recap form #label_email input {
+  width: 45%;
+}
+
+#recap form #submit {
+  position: absolute;
+  border-radius: 50px;
+  bottom: 20px;
+  right: 50px;
+  width: 30%;
+  height: 20%;
+  cursor: pointer;
+  background-color: #f4eaf2;
+  -webkit-box-shadow: 0px 0px 5px silver;
+          box-shadow: 0px 0px 5px silver;
+  -webkit-transition: 500ms ease-in-out;
+  transition: 500ms ease-in-out;
+}
+
+#recap form #submit:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #container_conf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 75vh;
+}
+
+main #container_conf #h1 {
+  text-align: center;
+  font-size: 30px;
+}
+/*# sourceMappingURL=style.css.map */

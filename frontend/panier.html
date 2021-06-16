@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <script src="js/panier.js" defer></script>
+    
+    <title>Panier</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img id="logo_header" src="images/logo1.JPG" alt="Logo Orinico">
+        </a>
+    </header>
+    
+    <main id="recap">
+        <h1>Récapitulatif de votre panier :</h1>
+        <div id="containerpanier"></div>
+        <h2>Passer votre commande :</h2>
+        <form>
+            <label id="label_nom" for="nom">
+                <p>Nom :</p>
+                <input id="nom" type="text" name="nom" placeholder="Votre nom ici...">
+            </label>
+            <label id="label_prenom" for="prenom">
+                <p>Prénom :</p>
+                <input id="prenom" type="text" name="prenom" placeholder="Votre prénom ici...">
+            </label>
+            <label id="label_adresse" for="adresse">
+                <p>Adresse :</p>
+                <input id="adresse" type="text" name="adresse" placeholder="Votre adresse ici...">
+            </label>
+            <label id="label_codePostal" for="codePostal">
+                <p>Code postal :</p>
+                <input id="codePostal" type="text" name="codePostal" placeholder="Votre code postal ici...">
+            </label>
+            <label id="label_ville" for="ville">
+                <p>ville :</p>
+                <input id="ville" type="text" name="ville" placeholder="Votre ville ici...">
+            </label>
+            <label id="label_email" for="email">
+                <p>E-mail :</p>
+                <input id="email" type="email" name="email" placeholder="Votre email ici...">
+            </label>
+            <input id="submit" type="submit" value="Envoyer">
+        </form>
+    </main>
+
+    <footer>
+        <p>2021 - Orinoco - Tous droits reservés</p>
+    </footer>
+</body>
+</html>
